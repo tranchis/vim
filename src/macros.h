@@ -336,7 +336,7 @@
    /* for isnan() and isinf() */
 #  include <math.h>
 # endif
-# ifdef USING_FLOAT_STUFF
+# if defined(USING_FLOAT_STUFF) && !defined(TARGET_OS_IPHONE) && !defined(TARGET_OS_SIMULATOR)
 #  if defined(WIN32)
 #   ifndef isnan
 #    define isnan(x) _isnan(x)

@@ -52,6 +52,10 @@
 # include <SegLoad.h>*/
 #endif
 
+#ifdef FEAT_GUI_IOS
+#include <CoreText/CoreText.h>
+#endif
+
 #ifdef FEAT_GUI_PHOTON
 # include <Ph.h>
 # include <Pt.h>
@@ -225,6 +229,12 @@ typedef long	    guicolor_T;	/* handle for a GUI color; for X11 this should
 #  define NOFONT	(GuiFont)NULL
 #  define NOFONTSET	(GuiFontset)NULL
 # else
+#  ifdef FEAT_GUI_IOS
+  typedef CTFontRef     GuiFont;  /* handle for a GUI font */
+  typedef CTFontRef     GuiFontset; /* handle for a GUI fontset */
+#  define NOFONT        (CTFontRef)NULL
+#  define NOFONTSET     (CTFontRef)NULL
+# else
 #  ifdef FEAT_GUI_X11
   typedef XFontStruct	*GuiFont;	/* handle for a GUI font */
   typedef XFontSet	GuiFontset;	/* handle for a GUI fontset */
@@ -237,6 +247,7 @@ typedef long	    guicolor_T;	/* handle for a GUI color; for X11 this should
 #   define NOFONTSET	(GuiFontset)0
 #  endif
 # endif
+#endif
 #endif
 
 typedef struct Gui

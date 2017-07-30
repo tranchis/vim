@@ -1916,6 +1916,7 @@ $VIM_POSIX	vi_diff.txt	/*$VIM_POSIX*
 :LPF	pi_logipat.txt	/*:LPF*
 :Lexplore	pi_netrw.txt	/*:Lexplore*
 :LogiPat	pi_logipat.txt	/*:LogiPat*
+:Mail   os_ios.txt  /*:Mail*
 :Man	filetype.txt	/*:Man*
 :MkVimball	pi_vimball.txt	/*:MkVimball*
 :N	editing.txt	/*:N*
@@ -1942,6 +1943,7 @@ $VIM_POSIX	vi_diff.txt	/*$VIM_POSIX*
 :RustFmtRange	ft_rust.txt	/*:RustFmtRange*
 :RustPlay	ft_rust.txt	/*:RustPlay*
 :RustRun	ft_rust.txt	/*:RustRun*
+:Share      os_ios.txt  /*:Share*
 :Sexplore	pi_netrw.txt	/*:Sexplore*
 :TOhtml	syntax.txt	/*:TOhtml*
 :TarDiff	pi_tar.txt	/*:TarDiff*
@@ -5003,6 +5005,7 @@ added-various	version5.txt	/*added-various*
 added-win32-GUI	version5.txt	/*added-win32-GUI*
 aff-dic-format	spell.txt	/*aff-dic-format*
 after-directory	options.txt	/*after-directory*
+airdrop os_ios.txt  /*airdrop*
 aleph	options.txt	/*aleph*
 alt	intro.txt	/*alt*
 alt-input	debugger.txt	/*alt-input*
@@ -5858,6 +5861,7 @@ exp()	eval.txt	/*exp()*
 expand()	eval.txt	/*expand()*
 expand-env	options.txt	/*expand-env*
 expand-environment-var	options.txt	/*expand-environment-var*
+exporting   os_ios.txt  /*exporting*
 expr	eval.txt	/*expr*
 expr-!	eval.txt	/*expr-!*
 expr-!=	eval.txt	/*expr-!=*
@@ -6672,6 +6676,7 @@ has_key()	eval.txt	/*has_key()*
 haskell.vim	syntax.txt	/*haskell.vim*
 haslocaldir()	eval.txt	/*haslocaldir()*
 hasmapto()	eval.txt	/*hasmapto()*
+have    os_ios.txt  /*have*
 hebrew	hebrew.txt	/*hebrew*
 hebrew.txt	hebrew.txt	/*hebrew.txt*
 help	helphelp.txt	/*help*
@@ -6938,6 +6943,7 @@ if_ruby.txt	if_ruby.txt	/*if_ruby.txt*
 if_sniff.txt	if_sniff.txt	/*if_sniff.txt*
 if_tcl.txt	if_tcl.txt	/*if_tcl.txt*
 ignore-errors	eval.txt	/*ignore-errors*
+importing   os_ios.txt  /*importing*
 improved-autocmds-5.4	version5.txt	/*improved-autocmds-5.4*
 improved-quickfix	version5.txt	/*improved-quickfix*
 improved-sessions	version5.txt	/*improved-sessions*
@@ -6953,6 +6959,7 @@ in_mode	channel.txt	/*in_mode*
 in_name	channel.txt	/*in_name*
 in_top	channel.txt	/*in_top*
 inactive-buffer	windows.txt	/*inactive-buffer*
+inbox   os_ios.txt  /*inbox*
 include-search	tagsrch.txt	/*include-search*
 inclusive	motion.txt	/*inclusive*
 incomp-small-6	version6.txt	/*incomp-small-6*
@@ -7009,6 +7016,8 @@ intro	intro.txt	/*intro*
 intro.txt	intro.txt	/*intro.txt*
 inverse	syntax.txt	/*inverse*
 invert()	eval.txt	/*invert()*
+ios os_ios.txt  /*ios*
+ios_file_management os_ios.txt  /*ios_file_management*
 ip	motion.txt	/*ip*
 iquote	motion.txt	/*iquote*
 is	motion.txt	/*is*
@@ -7770,6 +7779,7 @@ os_390.txt	os_390.txt	/*os_390.txt*
 os_amiga.txt	os_amiga.txt	/*os_amiga.txt*
 os_beos.txt	os_beos.txt	/*os_beos.txt*
 os_dos.txt	os_dos.txt	/*os_dos.txt*
+os_ios.txt  os_ios.txt  /*os_ios.txt*
 os_mac.txt	os_mac.txt	/*os_mac.txt*
 os_mint.txt	os_mint.txt	/*os_mint.txt*
 os_msdos.txt	os_msdos.txt	/*os_msdos.txt*

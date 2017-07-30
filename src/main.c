@@ -103,7 +103,7 @@ static int has_dash_c_arg = FALSE;
 # ifdef VIMDLL
 _export
 # endif
-# ifdef FEAT_GUI_MSWIN
+# if defined(FEAT_GUI_MSWIN) || defined(FEAT_GUI_IOS)
 #  ifdef __BORLANDC__
 _cdecl
 #  endif

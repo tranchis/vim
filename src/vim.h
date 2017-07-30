@@ -106,14 +106,19 @@
     Error: To compile for both MACOS X and Classic use a Classic Carbon
 #endif
 /* Unless made through the Makefile enforce GUI on Mac */
-#if defined(MACOS) && !defined(HAVE_CONFIG_H)
-# define FEAT_GUI_MAC
+#if defined(TARGET_OS_MAC) && !defined(HAVE_CONFIG_H)
+#  if defined(TARGET_OS_SIMULATOR) || defined(TARGET_OS_IPHONE)
+#    define FEAT_GUI_IOS
+#  else
+#    define FEAT_GUI_MAC
+#  endif
 #endif
 
 #if defined(FEAT_GUI_MOTIF) \
     || defined(FEAT_GUI_GTK) \
     || defined(FEAT_GUI_ATHENA) \
     || defined(FEAT_GUI_MAC) \
+    || defined(FEAT_GUI_IOS) \
     || defined(FEAT_GUI_W32) \
     || defined(FEAT_GUI_PHOTON)
 # define FEAT_GUI_ENABLED  /* also defined with NO_X11_INCLUDES */
@@ -227,7 +232,8 @@
 #endif
 
 /* The Mac conversion stuff doesn't work under X11. */
-#if defined(FEAT_MBYTE) && defined(MACOS_X)
+#if defined(FEAT_MBYTE) && defined(MACOS_X) && !defined(TARGET_OS_IPHONE) \
+    && !defined(TARGET_OS_SIMULATOR)
 # define MACOS_CONVERT
 #endif
 

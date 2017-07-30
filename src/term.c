@@ -25,6 +25,10 @@
 #define tgetstr tgetstr_defined_wrong
 #include "vim.h"
 
+#if defined(TARGET_OS_IPHONE) || defined(TARGET_OS_SIMULATOR)
+#include "termlib.pro"
+#endif
+
 #ifdef HAVE_TGETENT
 # ifdef HAVE_TERMIOS_H
 #  include <termios.h>	    /* seems to be required for some Linux */

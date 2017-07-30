@@ -475,7 +475,7 @@ redraw_after_callback(void)
     }
     cursor_on();
     out_flush();
-#ifdef FEAT_GUI
+#ifdef FEAT_GUI 
     if (gui.in_use)
     {
 	/* Don't update the cursor when it is blinking and off to avoid

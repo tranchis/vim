@@ -2682,6 +2682,9 @@ list_version(void)
 #      if defined(MSWIN)
     MSG_PUTS(_("with GUI."));
 #      else
+#   ifdef FEAT_GUI_IOS
+    MSG_PUTS(_("with iOS GUI."));
+#   else
 #	if defined(TARGET_API_MAC_CARBON) && TARGET_API_MAC_CARBON
     MSG_PUTS(_("with Carbon GUI."));
 #	else
@@ -2698,6 +2701,7 @@ list_version(void)
 #   endif
 #  endif
 # endif
+#endif
 #endif
     version_msg(_("  Features included (+) or not (-):\n"));
 
@@ -2857,10 +2861,17 @@ intro_message(
 	N_("Help poor children in Uganda!"),
 	N_("type  :help iccf<Enter>       for information "),
 	"",
+#ifdef FEAT_GUI_IOS
+    N_("type  :help<Enter>            for on-line help"),
+    N_("type  :help ios<Enter>        for iOS help    "),
+    "",
+    N_("Note: long-press the screen for an <ESC> key."),
+# else
 	N_("type  :q<Enter>               to exit         "),
 	N_("type  :help<Enter>  or  <F1>  for on-line help"),
 	N_("type  :help version8<Enter>   for version info"),
-	NULL,
+#endif
+    NULL,
 	"",
 	N_("Running in Vi compatible mode"),
 	N_("type  :set nocp<Enter>        for Vim defaults"),

@@ -34,7 +34,7 @@ typedef union {
     char_u   uc[8];
 } block8;
 
-#if defined(WIN3264)
+#if defined(WIN3264) || defined(TARGET_OS_IPHONE) || defined(TARGET_OS_SIMULATOR)
   /* MS-Windows is always little endian */
 #else
 # ifdef HAVE_CONFIG_H

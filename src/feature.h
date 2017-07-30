@@ -794,7 +794,8 @@
 	|| defined(FEAT_GUI_GTK) \
 	|| defined(FEAT_GUI_PHOTON) \
 	|| defined(FEAT_GUI_MSWIN) \
-	|| defined(FEAT_GUI_MAC)
+	|| defined(FEAT_GUI_MAC) \
+    || defined(FEAT_GUI_IOS)
 #  define FEAT_CON_DIALOG
 #  define FEAT_GUI_DIALOG
 # else
